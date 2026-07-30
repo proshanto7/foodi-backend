@@ -8,22 +8,35 @@ const bannerSchema = new Schema(
       required: [true, "title is required"],
       trim: true,
     },
-    subtitle: {
+    highlightedWord: {
       type: String,
       trim: true,
     },
-
-    image: {
+    description: {
       type: String,
-      required: [true, "image is required"],
+      required: [true, "description is required"],
+      trim: true,
     },
-
+  
+    bannerImage: {
+      type: String,
+      required: [true, "banner image is required"],
+    },
+ 
+    badgeText: {
+      type: String,
+    },
+   
+    buttons: {
+      type: Array,
+      default: [],
+    },
     isActive: {
       type: Boolean,
       default: true,
     },
   },
-  { timestamps: true, versionKey: false },
+  { timestamps: true , versionKey: false},
 );
 
 module.exports = mongoose.model("Banner", bannerSchema);
