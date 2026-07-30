@@ -1,0 +1,32 @@
+{
+  "name": "ecommerce-backend-database",
+  "version": "1.0.0",
+  "description": "CIT Home Work",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+ 
+  "homepage": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.2.3",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.4",
+    "nodemon": "^3.1.14",
+    "otp-generator": "^4.0.1",
+    "slugify": "^1.6.9"
+  }
+}
